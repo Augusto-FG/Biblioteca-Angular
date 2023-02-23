@@ -1,0 +1,23 @@
+
+.products--grid{
+  display: flex;   /* para mobile */
+  flex-direction: column;
+  div {
+    img{
+      width: 90%;
+      border-radius:  10px;
+    }
+    h2, p{
+    margin: 0;
+  }
+}
+}
+
+@media screen and (min-width: 40em) {  /* pantalla minima, de tablets en adelante, funciona como un if */
+  .products--grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 15;
+  }
+
+}
