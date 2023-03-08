@@ -1,4 +1,25 @@
 img {
   width: 200px;
+  aspect-ratio: 1.5/2;
+  object-fit:contain;
+  box-shadow: -6px 10px 17px 0px rgba(0,0,0,0.46);
+-webkit-box-shadow: -6px 10px 17px 0px rgba(0,0,0,0.46);
+-moz-box-shadow: -6px 10px 17px 0px rgba(0,0,0,0.46);
+transition: 100ms;
+}
+
+.book-container {
+  margin: 1rem;
+}
+
+.title, .price{
+  text-align: center;
 
 }
+
+img:hover{
+  scale: 1.2;
+  rotate: 10deg;
+}
+
+
